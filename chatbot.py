@@ -1,33 +1,23 @@
 import random
 def simple_chatbot():
-    
-    print("Hello! I am a simple chatbot. Let's have a conversation. Type 'exit' to end the chat.")
+    print("Heyy, I'm jusr simple chatbot")
 
     while True:
-        user_input = input("You: ")
+         user_input = input("You:")
 
-        if user_input.lower() == 'exit':
-            print("Goodbye!")
-            break
+         if user_input.lower() == 'exit':
+             print("Goodbye")
+             break
 
-        if "hello" in user_input.lower():
-            print("Chatbot: Hi there!")
-        elif "how are you" in user_input.lower():
-            print("Chatbot: I'm just a program, but I'm doing well, thanks for asking!")
-        elif "your name" in user_input.lower():
-            print("Chatbot: My name is Chatbot. Nice to meet you!")
-        else:
-            responses = ["Interesting!", "Tell me more.", "I'm not sure I understand.",
-                         "How does that make you feel?"]
+         if "hello" in user_input.lower():
+            print("Hii..")
+         elif "How are" in user_input.lower():
+            print("I'm just a simple chat bot.,im fine ")
+         elif "Your name" in user_input.lower():
+            print("Simple charbot")
+         else:
+            responses = ["interesting" , "Tell me more", "whatt"]
             random_response = random.choice(responses)
-            print(f"Chatbot: {random_response}")
-
-
+            print(f"Chatbot : {random_response}" )
 if __name__ == "__main__":
     simple_chatbot()
-
-
-
-
-
-
